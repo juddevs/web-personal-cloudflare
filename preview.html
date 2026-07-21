@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview Tipografías - Juddevs</title>
+  
+  <!-- Importar las tipografías propuestas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Syne:wght@700;800&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@700;800&family=JetBrains+Mono:wght@700;800&family=Outfit:wght@800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #0F172A; /* bg-base del proyecto */
+      color: #FFFFFF;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      color: #94A3B8;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .preview-card {
+      background: #161920;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 30px 50px;
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .font-name {
+      font-size: 0.9rem;
+      color: #A855F7; /* purple-core */
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    /* Estilo base del logo sacado de style.css */
+    .logo-preview {
+      font-size: 2.5rem; /* Más grande para que se vea bien */
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: -1px;
+    }
+
+    /* El puntito morado */
+    .nav-logo-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #A855F7;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #A855F7;
+      flex-shrink: 0;
+      align-self: flex-end;
+      margin-bottom: 8px;
+    }
+
+    /* Clases específicas para cada fuente */
+    .font-current { font-family: 'Outfit', sans-serif; font-weight: 800; }
+    .font-space { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -1.5px; }
+    .font-syne { font-family: 'Syne', sans-serif; font-weight: 800; letter-spacing: -0.5px; }
+    .font-bricolage { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; }
+    .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; }
+    .font-jetbrains { font-family: 'JetBrains Mono', monospace; font-weight: 800; letter-spacing: -2px; }
+
+  </style>
+</head>
+<body>
+
+  <h1>Comparativa de Tipografías</h1>
+
+  <div class="preview-card">
+    <div class="font-name">Actual: Outfit</div>
+    <div class="logo-preview font-current">
+      Juddevs<span class="nav-logo-dot"></span>
+    </div>
+  </div>
+
+  <div class="preview-card">
+    <div class="font-name">1. Space Grotesk (Tech & Future)</div>
+    <div class="logo-preview font-space">
+      Juddevs<span class="nav-logo-dot"></span>
+    </div>
+  </div>
+
+  <div class="preview-card">
+    <div class="font-name">2. Syne (Agencia Premium)</div>
+    <div class="logo-preview font-syne">
+      Juddevs<span class="nav-logo-dot"></span>
+    </div>
+  </div>
+
+  <div class="preview-card">
+    <div class="font-name">3. Bricolage Grotesque (Bold)</div>
+    <div class="logo-preview font-bricolage">
+      Juddevs<span class="nav-logo-dot"></span>
+    </div>
+  </div>
+
+  <div class="preview-card">
+    <div class="font-name">4. Plus Jakarta Sans (Clean SaaS)</div>
+    <div class="logo-preview font-jakarta">
+      Juddevs<span class="nav-logo-dot"></span>
+    </div>
+  </div>
+
+  <div class="preview-card">
+    <div class="font-name">5. JetBrains Mono (Pure Dev)</div>
+    <div class="logo-preview font-jetbrains">
+      Juddevs<span class="nav-logo-dot"></span>
+    </div>
+  </div>
+
+</body>
+</html>

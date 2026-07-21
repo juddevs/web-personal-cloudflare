@@ -1452,3 +1452,10 @@ img.avatar-circle {
   border: 2px solid #A855F7 !important; /* Borde morado elegante */
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.2); /* Resplandor súper sutil */
 }
+
+/* 3. Hacer el título central (Juddevs) mucho más fino y elegante */
+.hero-title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 300 !important; /* Letra muy fina y elegante */
+  letter-spacing: -1px !important; /* Un poco más compacta */
+}
