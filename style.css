@@ -3,48 +3,48 @@
    Design inspiration: Dribbble Dark SaaS / Bento UI
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 /* ── Design Tokens ──────────────────────────────────────────── */
 :root {
   /* Backgrounds — carbon/slate night palette */
-  --bg-base:       #0C0D10;   /* deepest layer */
+  --bg-base:       #0F172A;   /* deepest layer */
   --bg-elevated:   #111318;   /* sections */
   --bg-surface:    #161920;   /* glass base */
   --bg-surface-2:  #1C1F28;   /* raised elements */
   --bg-overlay:    #21242F;   /* hover overlays */
 
   /* Glass effect */
-  --glass-bg:      rgba(22, 25, 32, 0.55);
-  --glass-border:  rgba(255, 255, 255, 0.07);
-  --glass-hover:   rgba(255, 255, 255, 0.10);
-  --glass-blur:    20px;
+  --glass-bg:      rgba(30, 41, 59, 0.5);
+  --glass-border:  rgba(255, 255, 255, 0.1);
+  --glass-hover:   rgba(255, 255, 255, 0.3);
+  --glass-blur:    12px;
 
   /* Electric Purple palette */
   --purple-dim:    #3B1FA8;   /* deep glow */
-  --purple-core:   #6230D4;   /* primary brand */
-  --purple-bright: #7B2FFF;   /* electric accent */
+  --purple-core:   #A855F7;   /* primary brand */
+  --purple-bright: #A855F7;   /* electric accent */
   --purple-light:  #9B6AFF;   /* highlights */
   --purple-pale:   #C4A8FF;   /* text tints */
-  --purple-ghost:  rgba(123, 47, 255, 0.12);
-  --purple-glow:   rgba(123, 47, 255, 0.28);
-  --purple-glow-lg:rgba(123, 47, 255, 0.15);
+  --purple-ghost:  rgba(168, 85, 247, 0.12);
+  --purple-glow:   rgba(168, 85, 247, 0.28);
+  --purple-glow-lg:rgba(168, 85, 247, 0.15);
 
   /* Borders */
   --border-dim:    rgba(255, 255, 255, 0.05);
   --border-soft:   rgba(255, 255, 255, 0.08);
-  --border-purple: rgba(123, 47, 255, 0.22);
-  --border-purple-hover: rgba(123, 47, 255, 0.45);
+  --border-purple: rgba(168, 85, 247, 0.22);
+  --border-purple-hover: rgba(168, 85, 247, 0.45);
 
   /* Typography */
-  --text-primary:  #F2F3F8;
-  --text-secondary:#9DA3B4;
+  --text-primary:  #F8FAFC;
+  --text-secondary:#94A3B8;
   --text-muted:    #5E6375;
   --text-faint:    #383D4E;
 
   /* Fonts */
   --font:         'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
 
   /* Spacing / Radius */
   --r-sm:   10px;
@@ -78,6 +78,7 @@ body {
 }
 img, svg { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); }
 
 /* ── Grain texture overlay ──────────────────────────────────── */
 body::before {
@@ -894,7 +895,7 @@ body::before {
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
-  border-radius: var(--r-xl);
+  border-radius: 16px;
   padding: 32px 32px 28px;
   position: relative;
   overflow: hidden;
@@ -929,8 +930,8 @@ body::before {
 }
 
 .bento-card:hover {
-  border-color: var(--border-purple);
-  box-shadow: var(--shadow-card), 0 0 60px rgba(123,47,255,0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-card), 0 0 20px rgba(168, 85, 247, 0.4);
   transform: translateY(-4px);
 }
 .bento-card:hover::after { opacity: 1; }
