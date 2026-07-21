@@ -1456,6 +1456,6 @@ img.avatar-circle {
 /* 3. Hacer el título central (Juddevs) mucho más fino y elegante */
 .hero-title {
   font-family: 'Inter', sans-serif !important;
-  font-weight: 600 !important; /* Un poco más de presencia (SemiBold) */
+  font-weight: 700 !important; /* Más fuerza (Bold) pero sin llegar a lo tosco de antes */
   letter-spacing: -1px !important; /* Espaciado elegante */
 }
