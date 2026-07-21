@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juddevs — Automatización y Software B2B para E-commerce</title>
+  <meta name="description" content="Juddevs es un estudio de desarrollo especializado en automatización, IA y software B2B para tiendas online. Recupera tu tiempo y escala sin fricción." />
+  <meta name="keywords" content="automatización ecommerce, software B2B, agentes IA, chatbots, Shopify, desarrollo web" />
+  <meta name="author" content="Juddevs" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Juddevs — Automatización y Software B2B" />
+  <meta property="og:description" content="Ayudamos a tiendas online a entender sus datos y escalar sin fricción." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juddevs.com" />
+
+  <link rel="canonical" href="https://juddevs.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237B2FFF'/><text x='16' y='22' text-anchor='middle' font-size='18' font-family='Inter,sans-serif' font-weight='900' fill='white'>J</text></svg>" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Juddevs - Inicio">
+        Juddevs<span class="nav-logo-dot" aria-hidden="true"></span>
+      </a>
+
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#about" id="nav-about">El Estudio</a></li>
+        <li><a href="#services" id="nav-services">Servicios</a></li>
+        <li><a href="#cta" id="nav-contact">Contacto</a></li>
+        <li><a href="mailto:hola@juddevs.com" class="nav-cta" id="nav-email-cta">hola@juddevs.com</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════
+       HERO
+  ════════════════════════════════ -->
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="hero-dots" aria-hidden="true"></div>
+    <div class="hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow-2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-layout">
+
+        <!-- Left: copy -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            Disponible para nuevos proyectos
+          </div>
+
+          <h1 id="hero-title" class="hero-title gradient-text">Juddevs</h1>
+
+          <p class="hero-subtitle">
+            Automatización y Software B2B. Ayudamos a tiendas online a entender sus datos y escalar sin fricción.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn-primary" id="hero-cta-primary">
+              Ver Proyectos
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#about" class="btn-ghost" id="hero-cta-secondary">
+              El Estudio
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: abstract dashboard visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-dashboard">
+
+            <!-- SVG defs for sparkline gradient -->
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+              <defs>
+                <linearGradient id="spark-grad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#7B2FFF" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#7B2FFF" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <!-- KPI cards row -->
+            <div class="dash-card">
+              <div class="dash-kpi-row">
+                <div class="dash-kpi">
+                  <div class="dash-kpi-val">€84k</div>
+                  <div class="dash-kpi-label">Ingresos MRR</div>
+                  <div class="dash-kpi-badge">↑ +18%</div>
+                </div>
+                <div class="dash-kpi">
+                  <div class="dash-kpi-val">2.4k</div>
+                  <div class="dash-kpi-label">Pedidos hoy</div>
+                  <div class="dash-kpi-badge">↑ +7%</div>
+                </div>
+                <div class="dash-kpi">
+                  <div class="dash-kpi-val">98%</div>
+                  <div class="dash-kpi-label">Entregados</div>
+                  <div class="dash-kpi-badge" style="color:#6EE7B7;background:rgba(110,231,183,0.10);">✓ OK</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sparkline chart -->
+            <div class="dash-card dash-chart">
+              <div class="dash-chart-header">
+                <span class="dash-chart-title">Ventas recuperadas · 30 días</span>
+                <span class="dash-chart-value gradient-text">+€12,480</span>
+              </div>
+              <svg class="sparkline" viewBox="0 0 320 48" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="spark-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#7B2FFF" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#7B2FFF" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path class="sparkline-area" d="M0 48 L0 36 L40 30 L80 32 L120 20 L160 24 L200 12 L240 16 L280 6 L320 4 L320 48 Z" fill="url(#spark-grad2)"/>
+                <path class="sparkline-line" d="M0 36 L40 30 L80 32 L120 20 L160 24 L200 12 L240 16 L280 6 L320 4"/>
+                <circle cx="320" cy="4" r="3.5" fill="#7B2FFF" stroke="#C4A8FF" stroke-width="1.5"/>
+              </svg>
+            </div>
+
+            <!-- Activity status row -->
+            <div class="dash-card" style="padding: 16px 20px;">
+              <div class="dash-activity">
+                <div class="activity-dots">
+                  <div class="activity-dot completed active"></div>
+                  <div class="activity-dot completed active"></div>
+                  <div class="activity-dot semi"></div>
+                  <div class="activity-dot"></div>
+                  <div class="activity-dot"></div>
+                  <div class="activity-dot"></div>
+                  <div class="activity-dot"></div>
+                </div>
+                <span class="activity-label">3 automatizaciones activas · Procesando en tiempo real</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <div class="scroll-track"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       ABOUT
+  ════════════════════════════════ -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Visual / Stats -->
+        <div class="about-visual reveal">
+          <div class="about-card-stack">
+            <div class="stat-card">
+              <div>
+                <div class="stat-number" data-count="100">0%</div>
+                <div class="stat-label">Proyectos entregados a tiempo</div>
+              </div>
+              <div class="stat-icon" aria-hidden="true">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div>
+                <div class="stat-number" data-count="80" data-suffix="h+">0h+</div>
+                <div class="stat-label">Horas ahorradas por cliente al mes</div>
+              </div>
+              <div class="stat-icon" aria-hidden="true">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div>
+                <div class="stat-number" data-count="3" data-prefix="x">x0</div>
+                <div class="stat-label">Velocidad media de escalado</div>
+              </div>
+              <div class="stat-icon" aria-hidden="true">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text">
+
+          <!-- Avatar corporativo -->
+          <div class="avatar-wrap reveal">
+            <img
+              class="avatar-img"
+              src="avatar.png"
+              alt="Judith — Fundadora de Juddevs, desarrolladora de software B2B"
+              width="130"
+              height="130"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <span class="section-label">El Estudio</span>
+
+          <h2 id="about-title" class="reveal reveal-delay-1">
+            Tecnología que trabaja <span class="gradient-text">por ti</span>
+          </h2>
+          <p class="reveal reveal-delay-2">
+            Somos un estudio de desarrollo especializado en crear herramientas internas y sistemas inteligentes para e-commerce. Nuestro objetivo es que la tecnología trabaje por ti para que recuperes tu activo más valioso: tu tiempo.
+          </p>
+          <div class="about-pills reveal reveal-delay-3">
+            <span class="pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Shopify &amp; E-commerce
+            </span>
+            <span class="pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Automatización
+            </span>
+            <span class="pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              Software B2B
+            </span>
+            <span class="pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              IA &amp; Agentes
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SERVICES — BENTO GRID
+  ════════════════════════════════ -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-label">Servicios &amp; Proyectos</span>
+        <h2 id="services-title" class="reveal">
+          Soluciones que <span class="gradient-text">generan resultados</span>
+        </h2>
+        <p class="reveal reveal-delay-1">
+          Herramientas diseñadas para que tu operación de e-commerce crezca en piloto automático.
+        </p>
+      </header>
+
+      <!-- ── BENTO GRID ─────────────────────────────────────────── -->
+      <div class="bento-grid">
+
+        <!-- ── Card 1: Excel Automator — Large (2 cols) ──────────── -->
+        <article class="bento-card bento-card-1 reveal" id="service-excel">
+          <div class="bento-stripe" aria-hidden="true"></div>
+
+          <div class="bento-card-header">
+            <div class="bento-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+                <path d="m13 13 2 2 4-4" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="bento-tag">Proyecto</div>
+          </div>
+
+          <div>
+            <h3>Automatizador de Excel para E-commerce</h3>
+            <p>Transforma datos crudos de Shopify en informes visuales y KPIs al instante. Sin fórmulas manuales, sin errores, sin perder horas cada semana.</p>
+          </div>
+
+          <!-- Abstract bar chart decoration -->
+          <div aria-hidden="true">
+            <div class="bento-visual-bars">
+              <div class="bento-bar"></div>
+              <div class="bento-bar"></div>
+              <div class="bento-bar"></div>
+              <div class="bento-bar"></div>
+              <div class="bento-bar"></div>
+              <div class="bento-bar"></div>
+              <div class="bento-bar"></div>
+            </div>
+            <div class="bento-bar-baseline"></div>
+          </div>
+
+          <a href="mailto:hola@juddevs.com?subject=Automatizador Excel" class="bento-link" id="card-excel-link">
+            Saber más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <!-- ── Card 2: AI Agents — Tall (1 col, 2 rows) ──────────── -->
+        <article class="bento-card bento-card-2 reveal reveal-delay-1" id="service-ai">
+          <div class="bento-stripe" aria-hidden="true"></div>
+
+          <div class="bento-card-header">
+            <div class="bento-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                <circle cx="9" cy="14" r="1" fill="currentColor"/>
+                <circle cx="15" cy="14" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="bento-tag">Servicio</div>
+          </div>
+
+          <div>
+            <h3>Agentes de IA y Chatbots</h3>
+            <p>Sistemas inteligentes para atención al cliente 24/7 y filtrado de leads. Tu negocio nunca duerme.</p>
+          </div>
+
+          <!-- Abstract AI network decoration -->
+          <div class="bento-visual-network" aria-hidden="true">
+            <svg class="network-svg" viewBox="0 0 180 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Edges -->
+              <line class="network-edge" x1="90" y1="40" x2="40" y2="100"/>
+              <line class="network-edge" x1="90" y1="40" x2="140" y2="100"/>
+              <line class="network-edge" x1="40" y1="100" x2="65" y2="162"/>
+              <line class="network-edge" x1="140" y1="100" x2="115" y2="162"/>
+              <line class="network-edge" x1="40" y1="100" x2="115" y2="162" style="animation-delay:-0.8s"/>
+              <line class="network-edge" x1="140" y1="100" x2="65" y2="162" style="animation-delay:-1.2s"/>
+              <line class="network-edge" x1="90" y1="40" x2="90" y2="100" style="animation-delay:-0.4s"/>
+              <!-- Nodes -->
+              <circle class="network-node active" cx="90" cy="40" r="18"/>
+              <circle class="network-node" cx="40" cy="100" r="14" style="animation-delay:-0.6s"/>
+              <circle class="network-node active" cx="140" cy="100" r="14" style="animation-delay:-1s"/>
+              <circle class="network-node" cx="65" cy="162" r="12" style="animation-delay:-1.4s"/>
+              <circle class="network-node active" cx="115" cy="162" r="12" style="animation-delay:-0.3s"/>
+              <!-- Center dot -->
+              <circle cx="90" cy="40" r="6" fill="#7B2FFF" opacity="0.9"/>
+              <circle cx="140" cy="100" r="5" fill="#7B2FFF" opacity="0.8"/>
+              <circle cx="115" cy="162" r="5" fill="#7B2FFF" opacity="0.8"/>
+              <!-- Labels -->
+              <text x="90" y="44" text-anchor="middle" font-size="9" fill="#9B6AFF" font-family="Inter,sans-serif" font-weight="600">IA</text>
+              <text x="40" y="104" text-anchor="middle" font-size="7.5" fill="#5E6375" font-family="Inter,sans-serif">Lead</text>
+              <text x="140" y="104" text-anchor="middle" font-size="7.5" fill="#9B6AFF" font-family="Inter,sans-serif">Chat</text>
+              <text x="65" y="166" text-anchor="middle" font-size="7.5" fill="#5E6375" font-family="Inter,sans-serif">FAQ</text>
+              <text x="115" y="166" text-anchor="middle" font-size="7.5" fill="#9B6AFF" font-family="Inter,sans-serif">CRM</text>
+            </svg>
+          </div>
+
+          <a href="mailto:hola@juddevs.com?subject=Agentes IA" class="bento-link" id="card-ai-link">
+            Saber más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <!-- ── Card 3: Automation — Wide (2 cols) ────────────────── -->
+        <article class="bento-card bento-card-3 reveal reveal-delay-2" id="service-automation">
+          <div class="bento-stripe" aria-hidden="true"></div>
+
+          <div class="bento-card-header">
+            <div class="bento-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12.5A10 10 0 1 1 12 2"/>
+                <path d="M22 2 12 12"/>
+                <path d="m22 2-5 0 0 5"/>
+              </svg>
+            </div>
+            <div class="bento-tag">Servicio</div>
+          </div>
+
+          <h3>Sistemas de Automatización</h3>
+          <p>Flujos automáticos de correos y onboarding para recuperación de ventas. Convierte abandonos en conversiones mientras tú te concentras en crecer.</p>
+
+          <!-- Abstract email pipeline decoration -->
+          <div class="bento-visual-pipeline" aria-hidden="true">
+            <div class="pipeline-step">
+              <div class="pipeline-node">
+                <div class="pipeline-circle completed">✓</div>
+                <span class="pipeline-label">Abandono</span>
+              </div>
+              <div class="pipeline-connector"></div>
+            </div>
+            <div class="pipeline-step">
+              <div class="pipeline-node">
+                <div class="pipeline-circle completed">✓</div>
+                <span class="pipeline-label">Email 1h</span>
+              </div>
+              <div class="pipeline-connector"></div>
+            </div>
+            <div class="pipeline-step">
+              <div class="pipeline-node">
+                <div class="pipeline-circle active">→</div>
+                <span class="pipeline-label">Follow-up</span>
+              </div>
+              <div class="pipeline-connector"></div>
+            </div>
+            <div class="pipeline-step">
+              <div class="pipeline-node">
+                <div class="pipeline-circle">€</div>
+                <span class="pipeline-label">Recuperado</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="mailto:hola@juddevs.com?subject=Automatización" class="bento-link" id="card-auto-link">
+            Saber más
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       CTA BANNER
+  ════════════════════════════════ -->
+  <section id="cta" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-geo" aria-hidden="true"></div>
+        <div class="cta-geo-2" aria-hidden="true"></div>
+
+        <span class="section-label" style="justify-content:center; margin-bottom:20px;">¿Listo para escalar?</span>
+        <h2 id="cta-title">
+          Hablemos sobre <span class="gradient-text">tu próximo proyecto</span>
+        </h2>
+        <p>
+          Cuéntanos en qué punto está tu operación y encontramos juntos la solución que libera tu tiempo y acelera tu crecimiento.
+        </p>
+        <a href="mailto:hola@juddevs.com" class="btn-primary" id="cta-email-btn">
+          Escribirnos ahora
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <div class="footer-logo">Juddevs</div>
+          <p class="footer-tagline">Automatización y Software B2B para e-commerce que quiere escalar.</p>
+        </div>
+
+        <div class="footer-contact">
+          <span class="footer-contact-label">Contacto</span>
+          <a href="mailto:hola@juddevs.com" class="footer-email" id="footer-email-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            hola@juddevs.com
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://instagram.com/juddevs" target="_blank" rel="noopener noreferrer"
+             class="social-link" id="footer-instagram-link" aria-label="Juddevs en Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            @juddevs
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © <span id="footer-year">2025</span> <span>Juddevs</span>. Todos los derechos reservados.
+        </p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="#" id="footer-privacy">Privacidad</a>
+          <a href="#" id="footer-terms">Términos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
