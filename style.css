@@ -44,7 +44,7 @@
 
   /* Fonts */
   --font:         'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-display: 'Inter', system-ui, sans-serif;
 
   /* Spacing / Radius */
   --r-sm:   10px;
@@ -1428,7 +1428,7 @@ body::before {
 
 /* 1. Arreglar el Logo para que sea Premium */
 .logo, #header-logo {
-  font-family: 'Outfit', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 1.6rem !important;
   color: #FFFFFF !important;
@@ -1456,6 +1456,6 @@ img.avatar-circle {
 /* 3. Hacer el título central (Juddevs) mucho más fino y elegante */
 .hero-title {
   font-family: 'Inter', sans-serif !important;
-  font-weight: 200 !important; /* Letra extremadamente fina (ExtraLight) */
-  letter-spacing: -2px !important; /* Más compacta para darle el toque premium */
+  font-weight: 500 !important; /* Grosor intermedio (Medium) */
+  letter-spacing: -1px !important; /* Espaciado elegante */
 }
