@@ -1423,3 +1423,32 @@ body::before {
   .hero-actions { flex-direction: column; width: 100%; }
   .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
 }
+
+/* --- CORRECCIONES MANUALES JUDDEVS --- */
+
+/* 1. Arreglar el Logo para que sea Premium */
+.logo, #header-logo {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 1.6rem !important;
+  color: #FFFFFF !important;
+  letter-spacing: -1px !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important; /* Quita el degradado feo */
+}
+
+/* 2. Arreglar la foto de perfil para centrarla y darle estilo */
+.hero-avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+img.avatar-circle {
+  width: 80px; /* Tamaño perfecto, ni muy grande ni muy pequeña */
+  height: 80px;
+  border-radius: 50% !important; /* Hace que sea un círculo perfecto */
+  object-fit: cover;
+  border: 2px solid #A855F7 !important; /* Borde morado elegante */
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2); /* Resplandor súper sutil */
+}
